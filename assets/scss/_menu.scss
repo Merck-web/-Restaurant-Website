@@ -1,0 +1,87 @@
+.menu-section{
+    background-color: var(--dark);
+    padding-bottom: 60px;
+    .section-title{
+        margin-bottom: 40px;
+    }
+    .menu-tabs{
+        padding: 0 15px;
+        width: 100%;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        .menu-tab-item{
+            font-size: 18px;
+            font-family: inherit;
+            text-transform: capitalize;
+            border: none;
+            background-color: transparent;
+            font-weight: 500;
+            color: var(--white);
+            cursor: pointer;
+            margin: 10px 10px;
+            display: inline-block;
+            transition: var(--transition-all);
+            &.active{
+                color: var(--main-color);
+            }
+        }
+    }
+    .menu-item{
+        width: 50%;
+        padding: 20px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        &-title{
+            display: flex;
+            align-items: center;
+            max-width: calc(100% - 80px);
+            img{
+                max-width: 100%;
+                margin-right: 15px;
+            }
+            h3{
+                font-size: 16px;
+                text-transform: capitalize;
+                transition: var(--transition-all);
+            }
+        }
+        &-price{
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--main-color);
+            transition: var(--transition-all);
+        }
+    }
+    .menu-item::after{
+        content: '';
+        position: absolute;
+        left: 15px;
+        right: 15px;
+        bottom: 0;
+        border-bottom: 2px dashed var(--dark-light);
+    }
+    .menu-item:nth-last-of-type(2)::after,
+    .menu-item:nth-last-of-type(1)::after{
+        border: none;
+    }
+    .menu-item:hover{
+        .menu-item-title{
+            h3{
+                color: var(--main-color);
+            }
+        }
+        .menu-item-price{
+            color: var(--white);
+        }
+    }
+    .menu-tab-content{
+        display: none;
+        &.active{
+            display: flex;
+        }
+    }
+
+}

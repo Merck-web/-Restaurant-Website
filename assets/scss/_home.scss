@@ -1,0 +1,48 @@
+.home-section{
+    position: relative;
+    overflow: hidden;
+
+    .min-vh-100{
+        padding: 100px 0;
+    }
+    .home-text{
+        padding: 0 15px;
+        max-width: 700px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        h1{
+            font-family: var(--cursive-font);
+            font-size: 60px;
+            line-height: 75px;
+            margin: 0 0 5px;
+        }
+        p{
+            margin: 0 0 30px;
+        }
+    }
+    .home-bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        background-image: url('../img/home-bg.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        animation: zoomInOut 20s ease-in-out infinite;
+    }
+}
+.home-section::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+}
