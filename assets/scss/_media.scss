@@ -1,0 +1,47 @@
+@media (max-width: 991px){
+    .testimonial-section .testi-item{
+        width: calc(50% - 30px);
+    }
+    .team-section .team-item{
+        width: 50%;
+    }
+    .team-section .team-item:not(:last-child){
+        margin-bottom: 75px;
+    }
+}
+@media (max-width: 767px){
+    .home-section .home-text h1{
+        font-size: 50px;
+        line-height: 65px;
+    }
+    .menu-section .menu-item,
+    .about-section .about-text, 
+    .about-section .about-img{
+        width: 100%;
+    }
+    .about-section .about-text{
+        h3{
+            font-size: 24px;
+        }
+    }
+    .menu-section .menu-item:nth-last-of-type(2)::after{
+        border-bottom: 2px dashed var(--dark-light);
+    }
+    .about-section .about-img{
+        margin-top: 40px;
+    }
+    .testimonial-section .testi-item{
+        width: calc(100% - 30px);
+    }
+}
+@media (max-width: 575px){
+    .team-section .team-item{
+        width: 100%;
+    }
+    .footer-item{
+        width: 100%;
+    }
+    .footer-item:not(:last-child){
+        margin-bottom: 35px;
+    }
+}

@@ -1,3 +1,45 @@
 .testimonial-section{
     background-color: var(--dark);
+    padding-bottom: 50px;
+    .testi-item{
+        width: calc((100% / 3) - 30px);
+        margin: 0 15px 30px;
+        border: 2px solid var(--dark-light);
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+        p{
+            margin: 15px 0;
+        }
+    }
+    .testi-item:hover{
+        .testi-author{
+            img{
+                border-color: var(--main-color) ;
+            }
+        }
+    }
+    .testi-author{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+            display: block;
+            font-size: 14px;
+            text-transform: capitalize;
+        }
+        img{
+            max-width: 60px;
+            border-radius: 50%;
+            border: 3px solid var(--dark-light);
+            box-shadow: var(--shadow);
+            transition: var( --transition-all);
+        }
+    }
+    .ratings{
+        i{
+            font-size: 16px;
+            color: var(--main-color);
+        }
+    }
 }

@@ -78,6 +78,9 @@ p{
 .sec-padding{
     padding: 80px 0;
 }
+section{
+    overflow: hidden;
+}
 .section-title{
     width: 100%;
     padding: 0 15px;
@@ -96,4 +99,20 @@ p{
         font-weight: 400;
         text-transform: capitalize;
     }
+}
+/* Размеры скроллбара */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Трек поле скроллбара */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: var(--shadow); 
+    background: #000;
+}
+
+/* Ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: var(--shadow); 
+    background: var(--main-color);
 }
